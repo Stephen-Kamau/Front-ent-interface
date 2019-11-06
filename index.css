@@ -1,0 +1,102 @@
+body{background-color: #E8E8E8}
+*
+{
+	font-family: "Times New Roman", Times, serif;
+    margin: auto;
+    
+} 
+.mainData
+{
+	background-color: #E8E8E8;
+	height: 
+}
+
+.search
+{
+    font-size: 20px;
+    font-weight: 200%;
+    color: green;
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+    
+}
+
+.autocomplete
+{
+
+}
+
+.head
+{
+	
+
+}
+
+.class
+{
+
+}
+
+button
+{
+	width: 120px;
+	border: 2px solid #ddd;
+	font-size: 15px;
+	border-radius: 8px;
+	padding: 12px 20px 12px 20px;
+	text-align: center;
+	background-color: #009900;
+	margin-top: 1rem
+
+}
+input[type=text] {
+    width: 250px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    background-color: white;
+    background-image: url('searchicon.png');/* will look for the icon later*/
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+}
+
+input[type=text]:focus {
+    width: 50%;/* the text input will cover 50% of the page*/
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    list-style-type: none;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+}
+
+li {
+	margin: 0px auto;
+	display: inline-block;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+li a {
+	margin: 0px auto;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+form>div{margin:auto; text-align: center; display: block;}
