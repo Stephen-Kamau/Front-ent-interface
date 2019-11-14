@@ -1,14 +1,17 @@
-body{background-color: #E8E8E8}
+body
+{
+    background-color: #E8E8E8
+}
 *
 {
 	font-family: "Times New Roman", Times, serif;
     margin: auto;
-    
-} 
+
+}
 .mainData
 {
 	background-color: #E8E8E8;
-	height: 
+	height:
 }
 
 .search
@@ -17,9 +20,9 @@ body{background-color: #E8E8E8}
     font-weight: 200%;
     color: green;
     position: relative;
-    padding-top: 100px;
+    padding-top: 1px;
     text-align: center;
-    
+
 }
 
 .autocomplete
@@ -29,7 +32,7 @@ body{background-color: #E8E8E8}
 
 .head
 {
-	
+
 
 }
 
@@ -40,33 +43,38 @@ body{background-color: #E8E8E8}
 
 button
 {
-	width: 120px;
+	width: 100px;
 	border: 2px solid #ddd;
 	font-size: 15px;
-	border-radius: 8px;
-	padding: 12px 20px 12px 20px;
+	border-radius: 5px;
+	padding: 2px 3px 2px 4px;
 	text-align: center;
 	background-color: #009900;
-	margin-top: 1rem
+    margin-top: 1rem;
+    background-position: 10px 10px;
 
 }
-input[type=text] {
+input[type=text] 
+{
+    margin-top: 1rem;
     width: 250px;
     border: 2px solid #ccc;
     border-radius: 6px;
     font-size: 18px;
     background-color: white;
     background-image: url('searchicon.png');/* will look for the icon later*/
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 2px 3px 2px 4px;
 }
 
-input[type=text]:focus {
+input[type=text]:focus 
+{
     width: 50%;/* the text input will cover 50% of the page*/
 }
 
-ul {
+ul 
+{
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -77,7 +85,8 @@ ul {
     text-align: center;
 }
 
-li {
+li 
+{
 	margin: 0px auto;
 	display: inline-block;
     padding-right: 80px;
@@ -86,7 +95,8 @@ li {
     padding-bottom: 2px;
 }
 
-li a {
+li a 
+{
 	margin: 0px auto;
     display: inline-block;
     color: white;
@@ -99,4 +109,9 @@ li a:hover {
     background-color: #111;
 }
 
-form>div{margin:auto; text-align: center; display: block;}
+form>div
+{
+    margin:auto; 
+    text-align: center; 
+    display: block;
+}
