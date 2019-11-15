@@ -13,6 +13,10 @@ body
 	background-color: #E8E8E8;
 	height:
 }
+.head
+{
+    padding: 0px;
+}
 
 .search
 {
@@ -30,9 +34,13 @@ body
 
 }
 
-.head
+.footer
 {
-
+    background-color:rgb(128, 128, 128);
+    color:white;
+    clear:left;
+    text-align:center;
+    padding:5px;	 	 
 
 }
 
