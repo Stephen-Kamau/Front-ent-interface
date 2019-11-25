@@ -1,38 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Landing Home Page for the seach</title>
-
-	<link rel="stylesheet" type="text/css" href="index.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Weather Search</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkcYsJqIdzCSP_eMFAV7oSpgCObnZLTxpfwEHoboOy7LVuk25IOdt6nYaGk64HC5' async defer>
+</script>
 </head>
-
 <body>
-	<div class="head">
-		<ul>
-		  <li><a class="active" href="index.html">Home</a></li>
-		  <li><a href="Recent Search">Recent</a></li>
-		  <li><a href="Developer">Developer</a></li>
-		  <li><a href="About Devc">About Devc</a></li>
-		  <li>
-			<form id="searchform" action="" method="post">
-				<div>
-					<input type="text" name="search" id="keyword" placeholder="Search.." required>
-					<span><button type="submit" name="submit">REQUEST</button></span>
-				</div>
-			</form>
-		  </li>
-		</ul>
+	<div class="header">
+		<div class="search">
+			<h3 class="error"></h3>
+			<input type="text" name="search" placeholder="Search...." id="place">
+			<span>
+				<button name="submit" id="sendWeather" >Search</button>
+			</span>
+		</div>
+	    <h3>My Geo search for maps and weather</h3>
 	</div>
+	<div class="row">
+		<div class="col-1">
+			<div class="items">
+				<ul>
+					<li>Place: <script >
+						let place =
+						document.getElementById('#place').value;
+						document.getElementById("placename").innerHTML = Place;
+					</script></li>
+					<li class="placename"></li>
+					<li>Temperature</li>
+					<li class="temp"></li>
+					<li>Rainy and cloud state</li>
+					<li class="cloud"></li>
+					<li>wind speed</li>
+					<li class="speed"></li>
+					<li>Humidity</li>
+					<li class="humidity"></li>
+					<li>Wind direction</li>
+					<li class="direction"></li>
+				</ul>
+			</div>
+			<div class="change">
+				<h2>Convert::</h2>
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="map"></div>
+			<div id="placesCount"></div>
+		</div>
 
-		<div id="getPos"></div>
-		
-		<div class="autocomplete"></div> 
-		<div class="footer"></div>
 	</div>
-
-
-
+	<div class="footer">
+		<footer>
+			<p>&copy; steve 2017</p>
+		</footer>
+	</div>
+	<script src="jquery-3.4.1.js"></script>
+	<script src="index.js"></script>
+	<script src="indexMap.js"></script>
 </body>
 </html>
