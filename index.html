@@ -3,6 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Weather Search</title>
+<meta property="og:url"  content="https://www.your-domain.com/facebook.com" />
+<meta property="og:type"   content="website" />
+<meta property="og:title" content="share" />
+<meta property="og:description"   content="" />
+<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
 <link rel="stylesheet" type="text/css" href="index.css">
 <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AkcYsJqIdzCSP_eMFAV7oSpgCObnZLTxpfwEHoboOy7LVuk25IOdt6nYaGk64HC5' async defer>
 </script>
@@ -22,6 +27,21 @@
 		<div class="col-1">
 			<div class="items">
 				<ul>
+					<div id="fb-root"></div>
+					  <script>(function(d, s, id) {
+					    var js, fjs = d.getElementsByTagName(s)[0];
+					    if (d.getElementById(id)) return;
+					    js = d.createElement(s); js.id = id;
+					    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+					    fjs.parentNode.insertBefore(js, fjs);
+					  }(document, 'script', 'facebook-jssdk'));</script>
+
+					<p>
+						<div class="fb-share-button" 
+						    data-href="https://www.your-domain.com/facebook.com" 
+						    data-layout="button_count">
+						  </div>
+					</p>
 					<li> Place:<span id="placename"></span></li>
 					<li>Temperature</li>
 					<li class="temp"></li>
